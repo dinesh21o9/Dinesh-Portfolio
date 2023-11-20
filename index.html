@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Portfolio</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skillset" onclick="toggleMenu()">Skillset</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Portfolio</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#skillset" onclick="toggleMenu()">Skillset</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="dinesh profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Dinesh Surya,</h1>
+        <p class="section__text__p2">A Full Stack Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/12115076_Gidijala Dinesh Surya.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/gidijala-dinesh-surya/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/dinesh21o9'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Work Experience</h3>
+              <p>2+ Months <br />Web Developer Intern <br/> @GrowthCraft</p>
+            </div>
+            <div class="details-container">
+              <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+              />
+              <h3>Education</h3>
+              <p>B Tech in ECE from<br />NIT Kurukshetra</p>
+              <p>CGPA: 8.13/10.0</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a passionate engineer with a profound passion for development and 
+              a strong knack for competitive programming. Over the years, I have worked on 
+              my skills in Web Development and React Native, and I have successfully 
+              built dynamic and responsive websites and applications.
+              When I'm not immersed in coding, you'll often find me immersed in music, 
+              strumming melodies on my guitar and singing.
+            </p>
+          </div>
+        </div>
+      </div>
+       
+    </section>
+
+    <section id="experience">
+      <h1 class="title">Experience</h1>
+      <div class="section-container">
+        
+        <div class="work-details-container">
+          <h3 >Web Developer Intern</h3>
+          <a href="https://www.linkedin.com/feed/update/urn:li:ugcPost:7118339879595319296/">July 2023 | Pune, Mumbai - Remote</a>
+          <br>
+          <br>
+          <ul>
+            <li>Designed and implemented a Dynamic input field component in React for the ”Apply Now” page, reducing code repetition by a solid 40% which reduced ongoing maintenance of the system by 90%.</li>
+            <li>Developed an Admin Platform enabling administrators to manage data operations (CRUD) for courses through a user-friendly website interface.</li>
+            <li>Created a PHP-based RESTful API with JWT-based authentication, providing secure access control and audit trail capabilities, leading to a 30% boost in operational efficiency and a 40% decrease in admin errors.</li>
+          </ul>
+          <br>
+          <a href="mailto:abhishek.wakchaure@growthcraft.in">Contact: Abhishek Wakchaure - abhishek.wakchaure@growthcraft.in</a>
+        </div>
+        
+        <div class="section__pic-container">
+          <img
+            src="./assets/work-exp-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+      </div>
+       
+    </section>
+
+    <section id="projects">
+      <h1 class="title">Projects</h1>
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+
+            <div class="article-container">
+              <img
+                src="./assets/homeseekr.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+
+            <h2 class="experience-sub-title project-title">Homeseekr</h2>
+            <div class="project-points">
+              <ul>
+                <li>HomeSeekr is a Real-Estate Website.</li>
+                <li>Designed a PHP-based RESTful API with JWT-based user authentication.</li>
+                <li>Used React, Node, MySQL and Docker.</li>
+              </ul>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dinesh21o9/Real-Estate-website'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://homeseekr.netlify.app/'"
+              >
+                Live Demo  
+              </button>
+            </div>
+
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/memozor.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Memozor</h2>
+            <div class="project-points">
+              <ul>
+                <li>Memozor is a memory game.</li>
+                <li>It also saves player's highest score.</li>
+                <li>It is developed using PHP, HTML, CSS, JavaScript, jQuery and DOM</li>
+              </ul>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dinesh21o9/Memozor-game-main'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='http://memozor.rf.gd/index.php'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+
+            <div class="article-container">
+              <img
+                src="./assets/NotifNav.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+
+            <h2 class="experience-sub-title project-title">NotifNav</h2>
+            <div class="project-points">
+              <ul>
+                <li>NotifNav is a smart To-Do application.</li>
+                <li>It prioritizes users' saved
+                  tasks based on users' live and tasks' location.</li>
+                <li>Used React Native, Google Maps API, and stored data in MongoDB.</li>
+              </ul>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dinesh21o9/Notifnav'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Demo
+              </button>
+            </div>
+
+          </div>
+          
+          
+        </div>
+
+        <div class="about-containers">
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/gesture.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Gesture Media Controller</h2>
+            <div class="project-points">
+              <ul>
+                <li>Used Digital image processing to capture hand gestures</li>
+                <li>Implemented in Python using OpenCV, Mediapipe and PyAutoGUI.</li>
+              </ul>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dinesh21o9/IP-Workshop'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dinesh21o9/IP-Workshop#how-to-use'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/drum kit.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Drum kit</h2>
+            <div class="project-points">
+              <ul>
+                <li>It is a Drum-kit Web application.</li>
+                <li>Used DOM to get value of key pressed and used audio play package.</li>
+                <li>Used HTML, CSS, JavaScript and jQuery.</li>
+              </ul>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dinesh21o9/Drum-Kit'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://dinesh21o9.github.io/Drum-Kit/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/tindog.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">TinDog</h2>
+            <div class="project-points">
+              <ul>
+                <li>TinDog is tinder for dogs.</li>
+                <li>It is a Front-end project, which has user-friendly interface.</li>
+                <li>It is developed using HTML, CSS, JavaScript and Bootstrap.</li>
+              </ul>
+            </div>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/dinesh21o9/TinDog'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://dinesh21o9.github.io/TinDog/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+
+          
+        </div>
+      </div>
+
+       
+
+    </section>
+
+    <section id="skillset">
+      <h1 class="title">Skillset</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.js</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MySQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & Github</h3>
+                  <p>Experienced </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>PHP</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              
+            </div>
+          </div>
+        </div>
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Coding Profile</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/arrow.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CodeChef</h3>
+                  <a href="https://www.codechef.com/users/dinesh2109">link</a>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/arrow.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Leetcode</h3>
+                  <a href="https://leetcode.com/dinesh21o9/">link</a>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/arrow.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GeeksForGeeks</h3>
+                  <a href="https://auth.geeksforgeeks.org/user/dineshsurya2002">link</a>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/arrow.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>InterviewBit</h3>
+                  <a href="https://www.interviewbit.com/profile/dineshsurya2002_4bf63741866a">link</a>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/arrow.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Codeforces</h3>
+                  <a href="https://codeforces.com/profile/Dineshhh">link</a>
+                </div>
+              </article>
+            </div>
+          </div>          
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:dineshsurya.2002@gmail.com">dineshsurya.2002@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://linkedin.com/in/gidijala-dinesh-surya">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skillset" onclick="toggleMenu()">Skillset</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright : 2023 G Dinesh surya. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
